@@ -422,7 +422,7 @@ nav{
 /* ── FOOTER ── */
 footer{background:var(--ink);padding:40px 48px 28px}
 .footer-inner{max-width:1200px;margin:0 auto}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.footer-top{display:flex;justify-content:center;text-align:center;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.08)}
 .footer-brand-name{font-size:20px;font-weight:800;color:#fff;letter-spacing:-0.5px;margin-bottom:10px}
 .footer-brand-name span{color:var(--wa-green)}
 .footer-tagline{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.6;max-width:220px}
@@ -480,8 +480,8 @@ footer{background:var(--ink);padding:40px 48px 28px}
   .feat-rzp-grid{grid-template-columns:1fr; gap:12px;}
   .feat-rzp-card{padding:20px;}
   .feat-rzp-wide{grid-column:span 1;grid-template-columns:1fr;padding:20px}
-  .sync-demo{margin-top:20px;flex-direction:column;gap:12px}
-  .sync-arrows{transform:rotate(90deg);padding:10px 0}
+  .sync-demo{margin-top:20px;flex-direction:row;gap:4px;justify-content:center;align-items:center}
+  .sync-arrows{transform:none;padding:0 8px}
   
   .t-grid,.pricing-grid{grid-template-columns:1fr; gap:12px;}
   .t-card, .pricing-card{padding:20px;}
@@ -529,7 +529,6 @@ footer{background:var(--ink);padding:40px 48px 28px}
     <li><a href="#compare">Compare</a></li>
   </ul>
   <div class="nav-right">
-    <button class="btn-nav-ghost">Sign in</button>
     <button class="btn-nav-primary" onclick="document.querySelector('.cta-band').scrollIntoView({behavior:'smooth'})">Get early access</button>
   </div>
 </nav>
@@ -1040,33 +1039,6 @@ footer{background:var(--ink);padding:40px 48px 28px}
       <div>
         <div class="footer-brand-name">meeting<span>map</span></div>
         <div class="footer-tagline">From what was said — to what got done. The only meeting tool that closes the accountability loop.</div>
-      </div>
-      <div>
-        <div class="footer-col-title">Product</div>
-        <div class="footer-links">
-          <a href="#how">How it works</a>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#compare">Compare</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">Integrations</div>
-        <div class="footer-links">
-          <a href="#">Jira</a>
-          <a href="#">Asana</a>
-          <a href="#">Linear</a>
-          <a href="#">Slack</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">Company</div>
-        <div class="footer-links">
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-        </div>
       </div>
     </div>
     <div class="footer-bottom">
