@@ -1,11 +1,20 @@
 const express = require('express');
 const cors = require('cors');
 const fetch = require('node-fetch');
+const path = require('path');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+
+// Serve index.html as the root
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Serve other static files (css, js, images) if any
+app.use(express.static(path.join(__dirname, '.')));
 
 app.post('/api/interest', async (req, res) => {
   console.log('>>> Incoming request to /api/interest');
